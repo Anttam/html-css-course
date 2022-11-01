@@ -8,6 +8,7 @@
     <style>
       .el--1 {
         background-color: blueviolet;
+        align-self: flex-start;
       }
       .el--2 {
         background-color: orangered;
@@ -18,12 +19,16 @@
       }
       .el--4 {
         background-color: goldenrod;
+       
       }
       .el--5 {
         background-color: palevioletred;
+        align-self: stretch;
+        order: 1;
       }
       .el--6 {
         background-color: steelblue;
+        order: -1
       }
       .el--7 {
         background-color: yellow;
@@ -36,11 +41,25 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* FLEXBOX */
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        
       }
+      .el{
+         /* flex-grow: 0;
+         flex-shrink: 1;
+         flex-basis: auto; */
+
+         flex-basis: 200px;
+         /* flex-grow: 1; */
+         flex: 0 0 200px;
+        }
     </style>
   </head>
   <body>
@@ -50,9 +69,9 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <!-- <div class="el el--6">languages</div> -->
+      <!-- <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
